@@ -127,6 +127,64 @@ body {
     0 0 40px #00c0ff;
 }
 
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #39ff14, #0a0f1c);
+  opacity: 0.3;
+  border-radius: 50%;
+  animation: floatUp 20s linear infinite;
+}
+
+/* Random positions and delays */
+.bubble:nth-child(1) {
+  left: 20%;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.bubble:nth-child(2) {
+  left: 40%;
+  animation-delay: 5s;
+  animation-duration: 22s;
+}
+
+.bubble:nth-child(3) {
+  left: 60%;
+  animation-delay: 2s;
+  animation-duration: 20s;
+}
+
+.bubble:nth-child(4) {
+  left: 80%;
+  animation-delay: 1s;
+  animation-duration: 25s;
+}
+
+.bubble:nth-child(5) {
+  left: 10%;
+  animation-delay: 3s;
+  animation-duration: 19s;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-50vh) scale(1.2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1);
+    opacity: 0;
+  }
+}
+
+
 .img2{
   position: relative;
   bottom: 650px;
